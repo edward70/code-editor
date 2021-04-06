@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+html,
+body,
+textarea {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    white-space: pre;
+    padding: 1em;
+    color: #F5F5F5;
+    background-color: #212121;
+    font: 1em/1.618 "Ubuntu Mono", "Oxygen Mono", "DejaVu Sans Mono", "Source Code Pro", Menlo, Monaco, Consolas, "Roboto Mono", "Droid Sans Mono", monospace;
+    text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F5F5F5;
+}
+
+::-moz-selection {
+    background-color: #4CAF50;
+}
+
+::selection {
+    background-color: #4CAF50;
+}

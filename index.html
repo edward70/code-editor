@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Editor</title>
+    <link rel="preload" href="./styles.css" as="style">
+    <link rel="preload" href="https://unpkg.com/file-saver@1.3.8/FileSaver.min.js" as="script">
+    <link rel="preload" href="./main.js" as="script">
+    <meta name="description" content="A fast, simple code editor.">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Code Editor">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4CAF50">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta property="og:title" content="Code Editor">
+    <meta property="og:description" content="A fast, simple code editor for humans.">
+    <meta property="og:image" content="./android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="code">
+    <meta name="twitter:dnt" content="on">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <textarea wrap="off" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="main" id="editor">=== Welcome to the Editor ===
+
+Keyboard Shortcuts:
+Ctrl + Alt + O - Open File From Disk
+Ctrl + Shift + S - Save File To Disk
+Ctrl + Alt + S - Save File As To Disk
+Ctrl + Alt + N - New File
+Ctrl + Alt + R - Rename File</textarea>
+    <noscript>
+        <style>
+	    #editor {
+	        display: none;
+	    }
+	    </style>
+		<textarea wrap="off" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="main" id="editor-noscript">=== Welcome to the Editor ===
+
+Hmm, it seems javascript is disabled. You can still use this editor but if you want to save files, open files, etc. you'll need to enable javascript.
+</textarea>
+    </noscript>
+    <input type="file" id="fileinput">
+    <script src="https://unpkg.com/file-saver@1.3.8/FileSaver.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
